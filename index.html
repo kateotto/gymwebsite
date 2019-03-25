@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GYM POWER</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+		  <script>
+			new WOW().init();
+          </script>
+</head>
+<body>
+    <nav>
+        <a id="nav-toggle"><div></div></a>
+        <div class="nav-links">
+            <span><a href="#1">About</a></span>
+            <span><a href="#2">Member Card</a></span>
+            <span><a href="#3">Classes</a></span>
+            <span class="nav--special trigger">JOIN</span>
+            <span><a href="#4">Contact</a></span>
+        </div>
+    </nav>
+    <header>
+        <h1 id="header--title">FITNESS</h1>
+    </header>
+    <div class="modal--bg">
+        <div class="modal--wrapper">
+                <a class="btn-close trigger"><i class="far fa-times-circle"></i></a>
+            <div class="modal">
+                <div class="modal--register modal--box">
+                    <h2>Register</h2>
+                    <form method="POST">
+                        <label for="register-name">USERNAME</label>
+                        <input type="text" name="register-name"/>
+                        <br>
+                        <label for="register-pass">PASSWORD</label>
+                        <input type="password" name="register-pass"/>
+                        <br>
+                        <label for="register-email">EMAIL</label>
+                        <input type="email" name="register-email"/>
+                        <br>
+                        <input type="submit" value="SIGN UP"/>
+                    </form>
+                </div>
+                <div class="modal--login modal--box">
+                    <h2>Login</h2>
+                    <form method="POST">
+                        <label for="login-name">USERNAME</label>
+                        <input type="text" name="login-name"/>
+                        <br>
+                        <label for="login-pass">PASSWORD</label>
+                        <input type="password" name="login-pass"/>
+                        <br>
+                        <input type="submit" value="SIGN IN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sections">
+        <section id="1" class="section--one">
+                <h1 class="about--header header">ABOUT US</h1>
+                <div class="about--container">
+                    <div class="wow slideInLeft" data-wow-duration="1500ms">
+                            <p class="about--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed consequat ligula, nec maximus metus. 
+                                Donec id ultrices turpis. Morbi euismod, enim a elementum cursus, diam massa auctor quam, ac varius dolor 
+                                enim eu tellus. Proin ut ex in justo ultricies dapibus in ut enim. Suspendisse ultrices, ligula vitae 
+                                bibendum lobortis, lacus eros euismod enim, nec accumsan quam dolor at diam. Etiam rutrum fringilla mauris, 
+                                vel viverra neque vulputate eu. Donec pulvinar imperdiet viverra. Fusce convallis quis sem at facilisis. 
+                                Donec varius ipsum eget nibh maximus, eu faucibus est dapibus. Nunc vitae dictum urna.
+                            </p>
+                    </div>
+                    <img src="./assets/about.jpg"class="about--img" />
+                </div>
+        </section>
+        <section id="2" class="cards">
+            <h1 class="card--header header">MEMBER CARD</h1>
+            <div class="card--container">
+                <div class="card card-one">
+                    <h3>1 MONTH</h3>
+                    <br>
+                    <span class="card--price">$25</span>
+                    <ul>
+                        <li>free drinking water and shower</li>
+                        <li>24/7 access</li>
+                    </ul>
+                    <button class="card-btn">BUY NOW</button>
+                </div>
+                <div class="card card-two">
+                        <h3>3 MONTHS</h3>
+                        <br>
+                        <span class="card--price">$70</span>
+                        <ul>
+                            <li>free drinking water and shower</li>
+                            <li>1 personal training per month</li>
+                            <li>24/7 access</li>
+                        </ul>
+                        <button class="card-btn">BUY NOW</button>
+                </div>
+                <div class="card card-three">
+                        <h3>HALF A YEAR</h3>
+                        <br>
+                        <span class="card--price">$110</span>
+                        <ul>
+                            <li>free drinking water and shower</li>
+                            <li>2 personal trainings per month</li>
+                            <li>24/7 access</li>
+                        </ul>
+                        <button class="card-btn">BUY NOW</button>
+                </div>
+            </div>
+        </section>  
+        <section id="3" class="classes--container">
+                <h1 class="classes-header header" id="scroll-to">CHECK OUR CLASSES</h1>
+                <div class="value--container">
+                    <div class="value--content"><div id="value1">36</div>clubs for you</div>
+                    <div class="value--content"><div id="value2">14</div>types of classes</div>
+                    <div class="value--content"><div id="value3">24</div>hours open</div>
+                </div>
+                <a href="assets/gallery1.jpg" target="_blank" class="classes--download" download>
+                    <div> <h2>Download timetable here</h2> </div>
+                </a>
+                <div class="classes--subtitle">Impossible <br> is possible</div>
+        </section>
+        <section id="4">
+            <h1 class="footer--header header">CONTACT WITH US</h1>
+            <div>
+                    <div>contact@example.com</div>
+                    <br>
+                    <div>tel. 987-654-321</div>
+            </div>
+        </section>
+    </div>
+   <script src="modal.js"></script>
+   <script src="script.js"></script>
+   <script src="hamburger.js"></script>
+</body>
+</html>
